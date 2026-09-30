@@ -1,0 +1,21 @@
+{
+  "name": "hexcheck",
+  "version": "1.0.0",
+  "description": "Steady-state recuperative heat exchanger performance check and case comparison backend (effectiveness-NTU + LMTD cross-check). API + CLI only, no web UI.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/server/cli-server.ts",
+    "run:cli": "tsx src/cli/cli.ts",
+    "demo": "tsx demo/run-demo.ts",
+    "test": "tsx --test test/*.test.ts",
+    "clean": "node scripts/clean.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
